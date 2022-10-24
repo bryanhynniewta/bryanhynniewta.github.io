@@ -1,0 +1,88 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url("log.jpg");
+  
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.fb{
+  display: inline-block;
+  padding-right: 25px;
+}
+.gmail{
+  display: inline-block;
+  padding-right: 10px;
+}
+.apple{
+  display: inline-block;
+  background-color: white;
+  border-radius: 30px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+.for{
+  padding-right: 30px;
+  text-decoration: blink;
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+    USERNAME : <input type="text"></br></br>
+    PASSWORD : <input type="text"></br></br>
+    <div class="for"><a href="forgot.html" style="color:white">forgot password?</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="success.html">LOG IN</a></div></br>
+    OR</br></br>Don't have an account? &nbsp;&nbsp;<a href="register.html">&nbsp;&nbsp;Register now</a></br></br>
+  
+  Log in with:</br></br>
+  <div class="fb">
+    <a href="https://www.facebook.com/login/"target="_blank">
+    <img src="fblogo.png" alt="facebook" width="50px" height="50px">
+  </div></a>
+
+   <div class="gmail"><a href="https://accounts.google.com/v3/signin/identifier?dsh=S722018366%3A1666537642245212&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue%26pli%3D1&ec=GAlAwAE&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank">
+    <img src="gmaillogo.png" alt="gmail" width="60px" height="50px"></div></a>
+
+<div class="apple">
+  <a href="https://appleid.apple.com/sign-in"target="_blank">
+  <img src="applelogo.png" alt="apple" width="70px" height="50px">
+  </div></a></br></br>
+</body>
+</html>
